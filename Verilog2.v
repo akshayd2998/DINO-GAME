@@ -185,33 +185,11 @@ always @(posedge clk_60)
 					end						
 	end
 	
-		
-	
+
 /*Display Cordinates*/
 assign r =((inDisplayArea==1'b1)&&((CounterX)&&(CounterY>10'd247)&&(CounterY<10'd249))||((CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))||((CounterX>obstacle_x1)&&(CounterX<obstacle_x2)&&(CounterY>obstacle_y1)&&(CounterY<obstacle_y2)))?red:4'h0;
 assign g =((inDisplayArea==1'b1)&&((CounterX)&&(CounterY>10'd247)&&(CounterY<10'd249))||((CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))||((CounterX>obstacle_x1)&&(CounterX<obstacle_x2)&&(CounterY>obstacle_y1)&&(CounterY<obstacle_y2)))?green:4'h0;
 assign b =((inDisplayArea==1'b1)&&((CounterX)&&(CounterY>10'd247)&&(CounterY<10'd249))||((CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))||((CounterX>obstacle_x1)&&(CounterX<obstacle_x2)&&(CounterY>obstacle_y1)&&(CounterY<obstacle_y2)))?blue:4'h0;
 
-//assign RGB=((inDisplayArea==1'b1)&&((CounterX)&&(CounterY>10'd247)&&(CounterY<10'd249))||((CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))||((CounterX>obstacle_x1)&&(CounterX<obstacle_x2)&&(CounterY>obstacle_y1)&&(CounterY<obstacle_y2))||(location1&&q))?RED_GREEN_BLUE:4'h0;
-
-
-//assign r =((inDisplayArea==1'b1)&&(CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))?red:4'h0;
-//assign g =((inDisplayArea==1'b1)&&(CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))?green:4'h0;
-//assign b =((inDisplayArea==1'b1)&&(CounterX>x1)&&(CounterX<x2)&&(CounterY>y1)&&(CounterY<y2))?blue:4'h0;
-
-
-
-
-//	assign r =((inDisplayArea==1'b1))?red:4'h0;
-//	assign g =((inDisplayArea==1'b1))?green:4'h0;
-//	assign b =((inDisplayArea==1'b1))?blue:4'h0;
-
 endmodule	 
-	 //assign r =((inDisplayArea==1'b1)&&(CounterX <160))?red:4'h0;
-	// assign g =((inDisplayArea==1'b1)&&(160<=CounterX && CounterX<320))?green:4'h0;
-//	 assign b =((inDisplayArea==1'b1)&&(320<=CounterX && CounterX<479))?blue:4'h0;
-// 50<=CounterY<55
-	 
 	
-	
-//assign clk_1s=clk_div[22];
