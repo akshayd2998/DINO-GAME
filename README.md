@@ -1,4 +1,4 @@
-# DINO-GAME
+# FPGA BASED GAME (DINO GAME)
 
 This project is based on the offline game created by the developers working on Google Chrome. They found that users often get frustated when the internet isn't working. They decided to make a small time killing game for users to keep them occupied before the internet connection resume. The idea of the game is that a dinosaur is made to run on the given surface on screen and we have to clear the hurdles either by passing them through jumping or ducking. The game continues till there is establishment of the internet connection. Also there is a score board provided at the top right corner of the screen which shows the score of the individual playing game. Hence from there a thought arises to implement this type of game using the Field Programmable Gate Array(FPGA).
 
